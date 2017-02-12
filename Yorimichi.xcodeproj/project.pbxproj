@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3A8B89A31E4D8F4000F1FE1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B89A21E4D8F4000F1FE1F /* AppDelegate.swift */; };
-		3A8B89A51E4D8F4000F1FE1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B89A41E4D8F4000F1FE1F /* ViewController.swift */; };
+		3A8B89A51E4D8F4000F1FE1F /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B89A41E4D8F4000F1FE1F /* ViewController1.swift */; };
 		3A8B89A81E4D8F4000F1FE1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8B89A61E4D8F4000F1FE1F /* Main.storyboard */; };
 		3A8B89AA1E4D8F4000F1FE1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8B89A91E4D8F4000F1FE1F /* Assets.xcassets */; };
 		3A8B89AD1E4D8F4000F1FE1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8B89AB1E4D8F4000F1FE1F /* LaunchScreen.storyboard */; };
 		3A8B89B81E4D8F4100F1FE1F /* YorimichiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B89B71E4D8F4100F1FE1F /* YorimichiTests.swift */; };
 		3A8B89C31E4D8F4100F1FE1F /* YorimichiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B89C21E4D8F4100F1FE1F /* YorimichiUITests.swift */; };
+		3A8B89D41E4D967500F1FE1F /* LoadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B89D31E4D967500F1FE1F /* LoadFile.swift */; };
+		3A8B89D61E4D973F00F1FE1F /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B89D51E4D973F00F1FE1F /* Station.swift */; };
+		3A8B89D81E4D975300F1FE1F /* Ramen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B89D71E4D975300F1FE1F /* Ramen.swift */; };
+		3A8B89DE1E4DBB4700F1FE1F /* station_kanto_20170210.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3A8B89DD1E4DBB4700F1FE1F /* station_kanto_20170210.csv */; };
+		3AFF7C9F1E4FEB8500DBBA97 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF7C9E1E4FEB8500DBBA97 /* ViewController2.swift */; };
+		3AFF7CA11E4FEBAA00DBBA97 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF7CA01E4FEBAA00DBBA97 /* ViewController3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,7 @@
 /* Begin PBXFileReference section */
 		3A8B899F1E4D8F4000F1FE1F /* Yorimichi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yorimichi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8B89A21E4D8F4000F1FE1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A8B89A41E4D8F4000F1FE1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A8B89A41E4D8F4000F1FE1F /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		3A8B89A71E4D8F4000F1FE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A8B89A91E4D8F4000F1FE1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A8B89AC1E4D8F4000F1FE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		3A8B89BE1E4D8F4100F1FE1F /* YorimichiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YorimichiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8B89C21E4D8F4100F1FE1F /* YorimichiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YorimichiUITests.swift; sourceTree = "<group>"; };
 		3A8B89C41E4D8F4100F1FE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A8B89D31E4D967500F1FE1F /* LoadFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadFile.swift; sourceTree = "<group>"; };
+		3A8B89D51E4D973F00F1FE1F /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		3A8B89D71E4D975300F1FE1F /* Ramen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ramen.swift; sourceTree = "<group>"; };
+		3A8B89DD1E4DBB4700F1FE1F /* station_kanto_20170210.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 1; path = station_kanto_20170210.csv; sourceTree = "<group>"; };
+		3AFF7C9E1E4FEB8500DBBA97 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		3AFF7CA01E4FEBAA00DBBA97 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +110,17 @@
 			isa = PBXGroup;
 			children = (
 				3A8B89A21E4D8F4000F1FE1F /* AppDelegate.swift */,
-				3A8B89A41E4D8F4000F1FE1F /* ViewController.swift */,
 				3A8B89A61E4D8F4000F1FE1F /* Main.storyboard */,
+				3A8B89A41E4D8F4000F1FE1F /* ViewController1.swift */,
+				3AFF7C9E1E4FEB8500DBBA97 /* ViewController2.swift */,
+				3AFF7CA01E4FEBAA00DBBA97 /* ViewController3.swift */,
+				3A8B89D51E4D973F00F1FE1F /* Station.swift */,
+				3A8B89D71E4D975300F1FE1F /* Ramen.swift */,
+				3A8B89D31E4D967500F1FE1F /* LoadFile.swift */,
 				3A8B89A91E4D8F4000F1FE1F /* Assets.xcassets */,
 				3A8B89AB1E4D8F4000F1FE1F /* LaunchScreen.storyboard */,
 				3A8B89AE1E4D8F4000F1FE1F /* Info.plist */,
+				3A8B89D01E4D8F9A00F1FE1F /* csv */,
 			);
 			path = Yorimichi;
 			sourceTree = "<group>";
@@ -123,6 +141,14 @@
 				3A8B89C41E4D8F4100F1FE1F /* Info.plist */,
 			);
 			path = YorimichiUITests;
+			sourceTree = "<group>";
+		};
+		3A8B89D01E4D8F9A00F1FE1F /* csv */ = {
+			isa = PBXGroup;
+			children = (
+				3A8B89DD1E4DBB4700F1FE1F /* station_kanto_20170210.csv */,
+			);
+			path = csv;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +260,7 @@
 			files = (
 				3A8B89AD1E4D8F4000F1FE1F /* LaunchScreen.storyboard in Resources */,
 				3A8B89AA1E4D8F4000F1FE1F /* Assets.xcassets in Resources */,
+				3A8B89DE1E4DBB4700F1FE1F /* station_kanto_20170210.csv in Resources */,
 				3A8B89A81E4D8F4000F1FE1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A8B89A51E4D8F4000F1FE1F /* ViewController.swift in Sources */,
+				3A8B89D81E4D975300F1FE1F /* Ramen.swift in Sources */,
+				3A8B89A51E4D8F4000F1FE1F /* ViewController1.swift in Sources */,
 				3A8B89A31E4D8F4000F1FE1F /* AppDelegate.swift in Sources */,
+				3A8B89D61E4D973F00F1FE1F /* Station.swift in Sources */,
+				3A8B89D41E4D967500F1FE1F /* LoadFile.swift in Sources */,
+				3AFF7CA11E4FEBAA00DBBA97 /* ViewController3.swift in Sources */,
+				3AFF7C9F1E4FEB8500DBBA97 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +535,7 @@
 				3A8B89C91E4D8F4100F1FE1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A8B89CA1E4D8F4100F1FE1F /* Build configuration list for PBXNativeTarget "YorimichiTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +544,7 @@
 				3A8B89CC1E4D8F4100F1FE1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A8B89CD1E4D8F4100F1FE1F /* Build configuration list for PBXNativeTarget "YorimichiUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +553,7 @@
 				3A8B89CF1E4D8F4100F1FE1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
