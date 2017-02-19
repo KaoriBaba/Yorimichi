@@ -58,9 +58,9 @@ class ViewController1: UIViewController, UISearchBarDelegate, UIApplicationDeleg
     
     //Segueで遷移する際のメソッド
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // ViewController2をインスタンス化
+        //ViewController2をインスタンス化
         let ViewController2 = segue.destination as! ViewController2
-        // 値を渡す
+        //値を渡す
         ViewController2.allStation = station.allStation
     }
 

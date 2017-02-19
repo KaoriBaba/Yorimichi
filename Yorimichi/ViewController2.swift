@@ -25,8 +25,9 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
         // Dispose of any resources that can be recreated.
     }
     
-    var allStation:[String] = []
     @IBOutlet weak var stationTableView: UITableView!
+    var allStation:[String] = []
+    var stationName:String = ""
     
     //Cellの総数を返すdatasorceメソッド（記述必須）
     func tableView(_ tableView:UITableView, numberOfRowsInSection section: Int) ->
@@ -43,6 +44,24 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
             cell.textLabel?.text = allStation[indexPath.row]
             //設定済みのCellオブジェクトを画面に反映
             return cell
+    }
+    
+    //Cellが選択された際に呼び出されるdelegateメソッド
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //ハイライトの解除
+        tableView.deselectRow(at: indexPath, animated: true)
+        //駅を次のページに渡す
+        self.stationName = allStation[indexPath.row]+"駅"
+        //次の画面に遷移
+        performSegue(withIdentifier: "goAllRamen", sender: nil)
+    }
+    
+    //Segueで遷移する際のメソッド
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //ViewController3をインスタンス化
+        let ViewController3 = segue.destination as! ViewController3
+        //値を渡す
+        ViewController3.stationName = self.stationName
     }
     
 }
