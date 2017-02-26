@@ -13,7 +13,7 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
+        self.count = Count()
         //TableViewのdataSourceを設定
         stationTableView.dataSource = self
         //Table Viewのdelegateを設定
@@ -28,11 +28,24 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
     @IBOutlet weak var stationTableView: UITableView!
     var allStation:[String] = []
     var stationName:String = ""
+    var count:(stationCount:Int, osusumeNum:Int) = (0, 0)
+    
+    //駅の総数とおすすめの駅の位置を求める
+    func Count() -> (stationCount:Int, osusumeNum:Int) {
+        var count:Int = 0
+        for var i:Int in 0 ... 29 {
+            if allStation[i] != ""{
+                count = count + 1
+            }
+        }
+        let random = arc4random_uniform(UInt32(count))
+        return (stationCount:count, osusumeNum:Int(random))
+    }
     
     //Cellの総数を返すdatasorceメソッド（記述必須）
     func tableView(_ tableView:UITableView, numberOfRowsInSection section: Int) ->
         Int {
-            return 30 //駅リストの総数
+            return self.count.stationCount //駅の総数
     }
     
     //Cellに値を設定するdatasourceメソッド（記述必須）
@@ -42,6 +55,14 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
             let cell = tableView.dequeueReusableCell(withIdentifier: "stationCell", for: indexPath)
             //駅名を設定
             cell.textLabel?.text = allStation[indexPath.row]
+            //おすすめ駅の画像を設定
+            if indexPath.row == self.count.osusumeNum {
+                cell.imageView?.image = UIImage(named: "osusume.png")
+            }
+            print("indexPath.row")
+            print(indexPath.row)
+            print("self.count.osusumeNum")
+            print(self.count.osusumeNum)
             //設定済みのCellオブジェクトを画面に反映
             return cell
     }
