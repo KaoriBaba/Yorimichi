@@ -35,6 +35,10 @@ class ViewController1: UIViewController, UISearchBarDelegate, UIApplicationDeleg
     @IBOutlet weak var stationSearch3: UISearchBar!
     @IBOutlet weak var stationSearch4: UISearchBar!
     
+    @IBOutlet weak var lineName0: UILabel!
+    @IBOutlet weak var lineName1: UILabel!
+    @IBOutlet weak var lineName2: UILabel!
+    @IBOutlet weak var lineName3: UILabel!
     
     /*サーチバー入力時*/
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -43,6 +47,10 @@ class ViewController1: UIViewController, UISearchBarDelegate, UIApplicationDeleg
         //入力された駅の路線を特定する
         if let searchWord = searchBar.text {
             station.searchStation(station: searchWord, num: searchBar.tag)
+            lineName0.text = station.selectedLineName[0]
+            lineName1.text = station.selectedLineName[1]
+            lineName2.text = station.selectedLineName[2]
+            lineName3.text = station.selectedLineName[3]
         }
     }
     
@@ -50,8 +58,6 @@ class ViewController1: UIViewController, UISearchBarDelegate, UIApplicationDeleg
     @IBAction func ramenSearch(_ sender: Any) {
         //入力された駅の間にある全ての駅を探す
         station.searchAllStation()
-        //print(station.allStation)
-        
         //次の画面に遷移
         performSegue(withIdentifier: "goAllStation", sender: nil)
     }

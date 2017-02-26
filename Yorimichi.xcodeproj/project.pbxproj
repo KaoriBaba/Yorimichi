@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A150B941E61EF7700E5CED5 /* NoImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A150B931E61EF7700E5CED5 /* NoImage.png */; };
+		3A305CFE1E62B8DB00FAB99A /* company.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A305CF61E62B8DB00FAB99A /* company.png */; };
+		3A305CFF1E62B8DB00FAB99A /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A305CF71E62B8DB00FAB99A /* home.png */; };
+		3A305D031E62B8DB00FAB99A /* train1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A305CFB1E62B8DB00FAB99A /* train1.png */; };
+		3A305D041E62B8DB00FAB99A /* train2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A305CFC1E62B8DB00FAB99A /* train2.png */; };
+		3A305D051E62B8DB00FAB99A /* train3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A305CFD1E62B8DB00FAB99A /* train3.png */; };
+		3A305D071E62BA4900FAB99A /* senro.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A305D061E62BA4900FAB99A /* senro.png */; };
+		3A305D091E62C31400FAB99A /* noren_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A305D081E62C31400FAB99A /* noren_yellow.png */; };
+		3A305D141E62CC0200FAB99A /* uzura.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A305D131E62CC0200FAB99A /* uzura.ttf */; };
+		3A305D161E62D31100FAB99A /* osusume.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A305D151E62D31100FAB99A /* osusume.png */; };
 		3A8B89A31E4D8F4000F1FE1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B89A21E4D8F4000F1FE1F /* AppDelegate.swift */; };
 		3A8B89A51E4D8F4000F1FE1F /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B89A41E4D8F4000F1FE1F /* ViewController1.swift */; };
 		3A8B89A81E4D8F4000F1FE1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8B89A61E4D8F4000F1FE1F /* Main.storyboard */; };
@@ -40,6 +50,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A150B931E61EF7700E5CED5 /* NoImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoImage.png; sourceTree = "<group>"; };
+		3A305CF61E62B8DB00FAB99A /* company.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = company.png; sourceTree = "<group>"; };
+		3A305CF71E62B8DB00FAB99A /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		3A305CFB1E62B8DB00FAB99A /* train1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = train1.png; sourceTree = "<group>"; };
+		3A305CFC1E62B8DB00FAB99A /* train2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = train2.png; sourceTree = "<group>"; };
+		3A305CFD1E62B8DB00FAB99A /* train3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = train3.png; sourceTree = "<group>"; };
+		3A305D061E62BA4900FAB99A /* senro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = senro.png; sourceTree = "<group>"; };
+		3A305D081E62C31400FAB99A /* noren_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noren_yellow.png; sourceTree = "<group>"; };
+		3A305D131E62CC0200FAB99A /* uzura.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = uzura.ttf; sourceTree = "<group>"; };
+		3A305D151E62D31100FAB99A /* osusume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = osusume.png; sourceTree = "<group>"; };
 		3A8B899F1E4D8F4000F1FE1F /* Yorimichi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yorimichi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8B89A21E4D8F4000F1FE1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A8B89A41E4D8F4000F1FE1F /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
@@ -86,6 +106,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A150B921E61EF7700E5CED5 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				3A150B931E61EF7700E5CED5 /* NoImage.png */,
+				3A305CF61E62B8DB00FAB99A /* company.png */,
+				3A305CF71E62B8DB00FAB99A /* home.png */,
+				3A305D061E62BA4900FAB99A /* senro.png */,
+				3A305D151E62D31100FAB99A /* osusume.png */,
+				3A305CFB1E62B8DB00FAB99A /* train1.png */,
+				3A305CFC1E62B8DB00FAB99A /* train2.png */,
+				3A305CFD1E62B8DB00FAB99A /* train3.png */,
+				3A305D081E62C31400FAB99A /* noren_yellow.png */,
+			);
+			name = img;
+			path = csv/img;
+			sourceTree = "<group>";
+		};
+		3A305D121E62CC0200FAB99A /* font */ = {
+			isa = PBXGroup;
+			children = (
+				3A305D131E62CC0200FAB99A /* uzura.ttf */,
+			);
+			name = font;
+			path = csv/font;
+			sourceTree = "<group>";
+		};
 		3A8B89961E4D8F4000F1FE1F = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +166,8 @@
 				3A8B89A91E4D8F4000F1FE1F /* Assets.xcassets */,
 				3A8B89AB1E4D8F4000F1FE1F /* LaunchScreen.storyboard */,
 				3A8B89AE1E4D8F4000F1FE1F /* Info.plist */,
+				3A305D121E62CC0200FAB99A /* font */,
+				3A150B921E61EF7700E5CED5 /* img */,
 				3A8B89D01E4D8F9A00F1FE1F /* csv */,
 			);
 			path = Yorimichi;
@@ -258,8 +306,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A305D141E62CC0200FAB99A /* uzura.ttf in Resources */,
+				3A305D041E62B8DB00FAB99A /* train2.png in Resources */,
 				3A8B89AD1E4D8F4000F1FE1F /* LaunchScreen.storyboard in Resources */,
+				3A305D091E62C31400FAB99A /* noren_yellow.png in Resources */,
 				3A8B89AA1E4D8F4000F1FE1F /* Assets.xcassets in Resources */,
+				3A305D161E62D31100FAB99A /* osusume.png in Resources */,
+				3A150B941E61EF7700E5CED5 /* NoImage.png in Resources */,
+				3A305D071E62BA4900FAB99A /* senro.png in Resources */,
+				3A305D051E62B8DB00FAB99A /* train3.png in Resources */,
+				3A305CFE1E62B8DB00FAB99A /* company.png in Resources */,
+				3A305CFF1E62B8DB00FAB99A /* home.png in Resources */,
+				3A305D031E62B8DB00FAB99A /* train1.png in Resources */,
 				3A8B89DE1E4DBB4700F1FE1F /* station_kanto_20170210.csv in Resources */,
 				3A8B89A81E4D8F4000F1FE1F /* Main.storyboard in Resources */,
 			);
