@@ -63,7 +63,7 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4i-WG-qcs">
                                 <rect key="frame" x="16" y="524" width="343" height="110"/>
                                 <fontDescription key="fontDescription" name="uzura_font" family="uzura_font" pointSize="22"/>
-                                <state key="normal" title="Let's より道らーめん" backgroundImage="noren_yellow.png">
+                                <state key="normal" title="Let's 寄り道ラーメン" backgroundImage="noren_yellow.png">
                                     <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -257,7 +257,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Noa-2e-wQH" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="9Oc-h7-hrp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Oc-h7-hrp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

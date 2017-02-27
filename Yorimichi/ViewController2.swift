@@ -59,10 +59,6 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
             if indexPath.row == self.count.osusumeNum {
                 cell.imageView?.image = UIImage(named: "osusume.png")
             }
-            print("indexPath.row")
-            print(indexPath.row)
-            print("self.count.osusumeNum")
-            print(self.count.osusumeNum)
             //設定済みのCellオブジェクトを画面に反映
             return cell
     }

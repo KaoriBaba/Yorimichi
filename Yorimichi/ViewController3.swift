@@ -58,8 +58,8 @@ class ViewController3: UIViewController, UITableViewDataSource, UITableViewDeleg
             }
             
             //コメント数を詳細情報として設定
-            if (ramen.ramenList[indexPath.row].total_hit_count) != "" {
-            cell.detailTextLabel?.text = ramen.ramenList[indexPath.row].total_hit_count + "point"
+            if (ramen.ramenList[indexPath.row].total_hit_count) != 0 {
+                cell.detailTextLabel?.text = String(ramen.ramenList[indexPath.row].total_hit_count) + "point"
             }else{
                 cell.detailTextLabel?.text = "0point"
             }
