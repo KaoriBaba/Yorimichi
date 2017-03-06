@@ -70,6 +70,51 @@ class Station {
     
     /*入力された駅の路線を特定する*/
     func searchStation(station:String, num:Int){
+        //空のデータが飛んできたときは関連するデータを消す
+        switch num {
+        case 0:
+        if station == "" {
+            self.stationCode0 = ["","","","","","","","","","","","","","",""]
+            self.lineCode0 = ["","","","","","","","","","","","","","",""]
+            self.lineName0 = ["","","","","","","","","","","","","","",""]
+            clearData()
+            break
+        }
+        case 1:
+        if station == "" {
+            self.stationCode1 = ["","","","","","","","","","","","","","",""]
+            self.lineCode1 = ["","","","","","","","","","","","","","",""]
+            self.lineName1 = ["","","","","","","","","","","","","","",""]
+            clearData()
+            break
+        }
+        case 2:
+        if station == "" {
+            self.stationCode2 = ["","","","","","","","","","","","","","",""]
+            self.lineCode2 = ["","","","","","","","","","","","","","",""]
+            self.lineName2 = ["","","","","","","","","","","","","","",""]
+            clearData()
+            break
+        }
+        case 3:
+        if station == "" {
+            self.stationCode3 = ["","","","","","","","","","","","","","",""]
+            self.lineCode3 = ["","","","","","","","","","","","","","",""]
+            self.lineName3 = ["","","","","","","","","","","","","","",""]
+            clearData()
+            break
+        }
+        case 4:
+        if station == "" {
+            self.stationCode4 = ["","","","","","","","","","","","","","",""]
+            self.lineCode4 = ["","","","","","","","","","","","","","",""]
+            self.lineName4 = ["","","","","","","","","","","","","","",""]
+            clearData()
+            break
+        }
+        default:
+            print("error")
+        }
         
         //入力された駅の駅コードと路線コードを探す　※同じ名前の駅がある場合は全て保持する
         var j:Int = 0
@@ -79,56 +124,27 @@ class Station {
             if stationArray[1] == station {
                 switch num {
                 case 0:
-                    if selectedStationCode[0] != "" {
-                        self.stationCode0 = ["","","","","","","","","","","","","","",""]
-                        self.lineCode0 = ["","","","","","","","","","","","","","",""]
-                        self.lineName0 = ["","","","","","","","","","","","","","",""]
-                        clearData()
-                    }
                     stationCode0[j] = stationArray[0]
                     lineCode0[j] = stationArray[2]
                     lineName0[j] = stationArray[3]
                     j += 1
                 case 1:
-                    if selectedStationCode[2] != "" {
-                        self.stationCode1 = ["","","","","","","","","","","","","","",""]
-                        self.lineCode1 = ["","","","","","","","","","","","","","",""]
-                        self.lineName1 = ["","","","","","","","","","","","","","",""]
-                        clearData()
-                    }
                     stationCode1[j] = stationArray[0]
                     lineCode1[j] = stationArray[2]
                     lineName1[j] = stationArray[3]
                     j += 1
                 case 2:
-                    if selectedStationCode[4] != "" {
-                        self.stationCode2 = ["","","","","","","","","","","","","","",""]
-                        self.lineCode2 = ["","","","","","","","","","","","","","",""]
-                        self.lineName2 = ["","","","","","","","","","","","","","",""]
-                        clearData()
-                    }
                     stationCode2[j] = stationArray[0]
                     lineCode2[j] = stationArray[2]
                     lineName2[j] = stationArray[3]
                     j += 1
                 case 3:
-                    if selectedStationCode[6] != "" {
-                        self.stationCode3 = ["","","","","","","","","","","","","","",""]
-                        self.lineCode3 = ["","","","","","","","","","","","","","",""]
-                        self.lineName3 = ["","","","","","","","","","","","","","",""]
-                        clearData()
-                    }
+
                     stationCode3[j] = stationArray[0]
                     lineCode3[j] = stationArray[2]
                     lineName3[j] = stationArray[3]
                     j += 1
                 case 4:
-                    if selectedStationCode[7] != "" {
-                        self.stationCode4 = ["","","","","","","","","","","","","","",""]
-                        self.lineCode4 = ["","","","","","","","","","","","","","",""]
-                        self.lineName4 = ["","","","","","","","","","","","","","",""]
-                        clearData()
-                    }
                     stationCode4[j] = stationArray[0]
                     lineCode4[j] = stationArray[2]
                     lineName4[j] = stationArray[3]

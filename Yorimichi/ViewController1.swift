@@ -45,18 +45,61 @@ class ViewController1: UIViewController, UISearchBarDelegate, UIApplicationDeleg
     @IBOutlet weak var lineName1: UILabel!
     @IBOutlet weak var lineName2: UILabel!
     @IBOutlet weak var lineName3: UILabel!
-
+    
+    @IBOutlet weak var homeImage: UIImageView!
+    @IBOutlet weak var trainImage0: UIImageView!
+    @IBOutlet weak var trainImage1: UIImageView!
+    @IBOutlet weak var trainImage2: UIImageView!
+    
     /*サーチバー入力時*/
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         //入力が終わったらキーボードを閉じる
         view.endEditing(true)
+        
+        //次に入力してほしいサーチバーを強調
+        switch searchBar.tag {
+        case 0:
+            if searchBar.text != "" {
+                homeImage.image = UIImage(named: "home.png")
+                stationSearch4.backgroundImage = UIImage(named: "sky_line.png")
+            }else{
+                homeImage.image = UIImage(named: "")
+                stationSearch4.backgroundImage = UIImage(named: "")
+            }
+        case 4:
+            if searchBar.text != "" {
+                trainImage0.image = UIImage(named: "train1.png")
+                stationSearch1.backgroundImage = UIImage(named: "sky_line.png")
+            }else{
+                trainImage0.image = UIImage(named: "")
+                stationSearch1.backgroundImage = UIImage(named: "")
+            }
+        case 1:
+            if searchBar.text != "" {
+                trainImage1.image = UIImage(named: "train2.png")
+                stationSearch2.backgroundImage = UIImage(named: "sky_line.png")
+            }else{
+                trainImage1.image = UIImage(named: "")
+                stationSearch2.backgroundImage = UIImage(named: "")
+            }
+        case 2:
+            if searchBar.text != "" {
+                trainImage2.image = UIImage(named: "train3.png")
+                stationSearch3.backgroundImage = UIImage(named: "sky_line.png")
+            }else{
+                trainImage2.image = UIImage(named: "")
+                stationSearch3.backgroundImage = UIImage(named: "")
+            }
+        default: break
+        }
+        
         //入力された駅の路線を特定する
         if let searchWord = searchBar.text {
             station.searchStation(station: searchWord, num: searchBar.tag)
-            lineName0.text = station.selectedLineName[0]
-            lineName1.text = station.selectedLineName[1]
-            lineName2.text = station.selectedLineName[2]
-            lineName3.text = station.selectedLineName[3]
+                lineName0.text = station.selectedLineName[0]
+                lineName1.text = station.selectedLineName[1]
+                lineName2.text = station.selectedLineName[2]
+                lineName3.text = station.selectedLineName[3]
         }
     }
     
