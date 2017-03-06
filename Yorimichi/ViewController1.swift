@@ -20,7 +20,13 @@ class ViewController1: UIViewController, UISearchBarDelegate, UIApplicationDeleg
         stationSearch2.delegate = self
         stationSearch3.delegate = self
         stationSearch4.delegate = self
-
+        
+        //Search Barの中身が空でも検索ボタンを押せるようにする
+        stationSearch0.enablesReturnKeyAutomatically = false
+        stationSearch1.enablesReturnKeyAutomatically = false
+        stationSearch2.enablesReturnKeyAutomatically = false
+        stationSearch3.enablesReturnKeyAutomatically = false
+        stationSearch4.enablesReturnKeyAutomatically = false
     }
     
     override func didReceiveMemoryWarning() {

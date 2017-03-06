@@ -235,7 +235,6 @@ class Station {
                     for var i:Int in 0 ... 2481 {
                         stationArray = csvStationArray[i].components(separatedBy:",")
                         if selectedStationCode[j] <= stationArray[0] && selectedStationCode[j+1] > stationArray[0]{
-                            print(stationArray[1])
                             allStation[k] = stationArray[1]
                             k += 1
                         }
