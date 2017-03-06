@@ -33,7 +33,7 @@ class ViewController2: UIViewController, UITableViewDataSource, UITableViewDeleg
     //駅の総数とおすすめの駅の位置を求める
     func Count() -> (stationCount:Int, osusumeNum:Int) {
         var count:Int = 0
-        for var i:Int in 0 ... 29 {
+        for var i:Int in 0 ... 49 {
             if allStation[i] != ""{
                 count = count + 1
             }

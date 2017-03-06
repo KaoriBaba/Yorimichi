@@ -14,9 +14,9 @@
 		3A305D041E62B8DB00FAB99A /* train2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A305CFC1E62B8DB00FAB99A /* train2.png */; };
 		3A305D051E62B8DB00FAB99A /* train3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A305CFD1E62B8DB00FAB99A /* train3.png */; };
 		3A305D071E62BA4900FAB99A /* senro.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A305D061E62BA4900FAB99A /* senro.png */; };
-		3A305D091E62C31400FAB99A /* noren_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A305D081E62C31400FAB99A /* noren_yellow.png */; };
 		3A305D141E62CC0200FAB99A /* uzura.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A305D131E62CC0200FAB99A /* uzura.ttf */; };
 		3A305D161E62D31100FAB99A /* osusume.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A305D151E62D31100FAB99A /* osusume.png */; };
+		3A8325D81E6CED220005D816 /* ramen.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A8325D71E6CED220005D816 /* ramen.png */; };
 		3A8B89A31E4D8F4000F1FE1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B89A21E4D8F4000F1FE1F /* AppDelegate.swift */; };
 		3A8B89A51E4D8F4000F1FE1F /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B89A41E4D8F4000F1FE1F /* ViewController1.swift */; };
 		3A8B89A81E4D8F4000F1FE1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8B89A61E4D8F4000F1FE1F /* Main.storyboard */; };
@@ -28,6 +28,7 @@
 		3A8B89D61E4D973F00F1FE1F /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B89D51E4D973F00F1FE1F /* Station.swift */; };
 		3A8B89D81E4D975300F1FE1F /* Ramen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B89D71E4D975300F1FE1F /* Ramen.swift */; };
 		3A8B89DE1E4DBB4700F1FE1F /* station_kanto_20170210.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3A8B89DD1E4DBB4700F1FE1F /* station_kanto_20170210.csv */; };
+		3AFC648A1E6D3516004A93C3 /* noren3_yellow_kanji.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC64881E6D3516004A93C3 /* noren3_yellow_kanji.png */; };
 		3AFF7C9F1E4FEB8500DBBA97 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF7C9E1E4FEB8500DBBA97 /* ViewController2.swift */; };
 		3AFF7CA11E4FEBAA00DBBA97 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF7CA01E4FEBAA00DBBA97 /* ViewController3.swift */; };
 /* End PBXBuildFile section */
@@ -57,9 +58,9 @@
 		3A305CFC1E62B8DB00FAB99A /* train2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = train2.png; sourceTree = "<group>"; };
 		3A305CFD1E62B8DB00FAB99A /* train3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = train3.png; sourceTree = "<group>"; };
 		3A305D061E62BA4900FAB99A /* senro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = senro.png; sourceTree = "<group>"; };
-		3A305D081E62C31400FAB99A /* noren_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noren_yellow.png; sourceTree = "<group>"; };
 		3A305D131E62CC0200FAB99A /* uzura.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = uzura.ttf; sourceTree = "<group>"; };
 		3A305D151E62D31100FAB99A /* osusume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = osusume.png; sourceTree = "<group>"; };
+		3A8325D71E6CED220005D816 /* ramen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ramen.png; sourceTree = "<group>"; };
 		3A8B899F1E4D8F4000F1FE1F /* Yorimichi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yorimichi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8B89A21E4D8F4000F1FE1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A8B89A41E4D8F4000F1FE1F /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		3A8B89D51E4D973F00F1FE1F /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		3A8B89D71E4D975300F1FE1F /* Ramen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ramen.swift; sourceTree = "<group>"; };
 		3A8B89DD1E4DBB4700F1FE1F /* station_kanto_20170210.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 1; path = station_kanto_20170210.csv; sourceTree = "<group>"; };
+		3AFC64881E6D3516004A93C3 /* noren3_yellow_kanji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noren3_yellow_kanji.png; sourceTree = "<group>"; };
 		3AFF7C9E1E4FEB8500DBBA97 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		3AFF7CA01E4FEBAA00DBBA97 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +111,8 @@
 		3A150B921E61EF7700E5CED5 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				3AFC64881E6D3516004A93C3 /* noren3_yellow_kanji.png */,
+				3A8325D71E6CED220005D816 /* ramen.png */,
 				3A150B931E61EF7700E5CED5 /* NoImage.png */,
 				3A305CF61E62B8DB00FAB99A /* company.png */,
 				3A305CF71E62B8DB00FAB99A /* home.png */,
@@ -117,7 +121,6 @@
 				3A305CFB1E62B8DB00FAB99A /* train1.png */,
 				3A305CFC1E62B8DB00FAB99A /* train2.png */,
 				3A305CFD1E62B8DB00FAB99A /* train3.png */,
-				3A305D081E62C31400FAB99A /* noren_yellow.png */,
 			);
 			name = img;
 			path = csv/img;
@@ -309,9 +312,9 @@
 				3A305D141E62CC0200FAB99A /* uzura.ttf in Resources */,
 				3A305D041E62B8DB00FAB99A /* train2.png in Resources */,
 				3A8B89AD1E4D8F4000F1FE1F /* LaunchScreen.storyboard in Resources */,
-				3A305D091E62C31400FAB99A /* noren_yellow.png in Resources */,
 				3A8B89AA1E4D8F4000F1FE1F /* Assets.xcassets in Resources */,
 				3A305D161E62D31100FAB99A /* osusume.png in Resources */,
+				3AFC648A1E6D3516004A93C3 /* noren3_yellow_kanji.png in Resources */,
 				3A150B941E61EF7700E5CED5 /* NoImage.png in Resources */,
 				3A305D071E62BA4900FAB99A /* senro.png in Resources */,
 				3A305D051E62B8DB00FAB99A /* train3.png in Resources */,
@@ -319,6 +322,7 @@
 				3A305CFF1E62B8DB00FAB99A /* home.png in Resources */,
 				3A305D031E62B8DB00FAB99A /* train1.png in Resources */,
 				3A8B89DE1E4DBB4700F1FE1F /* station_kanto_20170210.csv in Resources */,
+				3A8325D81E6CED220005D816 /* ramen.png in Resources */,
 				3A8B89A81E4D8F4000F1FE1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

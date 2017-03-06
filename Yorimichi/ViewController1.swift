@@ -39,7 +39,7 @@ class ViewController1: UIViewController, UISearchBarDelegate, UIApplicationDeleg
     @IBOutlet weak var lineName1: UILabel!
     @IBOutlet weak var lineName2: UILabel!
     @IBOutlet weak var lineName3: UILabel!
-    
+
     /*サーチバー入力時*/
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         //入力が終わったらキーボードを閉じる

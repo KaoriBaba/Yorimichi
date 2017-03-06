@@ -66,6 +66,11 @@ class Ramen {
                         if image_url["shop_image1"] as? String != nil {
                             shop_image = image_url["shop_image1"] as! String
                         }
+                        //小業態コード(String)
+                        guard let code = rest["code"] as? [String:Any] else {
+                            continue
+                        }
+                        let category_code_s = code["category_code_s"] as! [NSString]
                         
                         //-------------------------------
                         var respons:[String:Any] = [:]
@@ -91,18 +96,19 @@ class Ramen {
                                 //該当件数
                                 if json2["response"] as? [String:Any] != nil {
                                     respons = json2["response"] as! [String:Any]
-                                    print("respons--------------------")
-                                    print(respons)
                                 }
                                 if respons["total_hit_count"] as? Int != nil {
                                     total_hit_count = respons["total_hit_count"] as! Int
                                 }
-                                //１店舗をタプルでまとめて管理
-                                let ramen = (id,name,url_mobile,shop_image,total_hit_count)
-                                //ラーメン屋さん配列へ追加
-                                self.ramenList.append(ramen)
-                                print("ramenList")
-                                print(self.ramenList)
+                                //ラーメン屋さん以外の情報が入ってきていたら除外
+                                if category_code_s[0] == "RSFST08008" {
+                                    //１店舗をタプルでまとめて管理
+                                    let ramen = (id,name,url_mobile,shop_image,total_hit_count)
+                                    //ラーメン屋さん配列へ追加
+                                    self.ramenList.append(ramen)
+                                }
+//                                print("ramenList")
+//                                print(self.ramenList)
                             } catch {
                                 //エラー処理
                                 print("エラーが出ました")
